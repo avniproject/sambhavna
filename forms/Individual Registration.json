@@ -1,0 +1,66 @@
+{
+  "name" : "Individual Registration",
+  "uuid" : "5f7cf9b7-a9e0-4401-8c7c-9c38ee174548",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "84995a87-dce0-41a9-bb09-f90ca06603c4",
+    "name" : "Individual details",
+    "displayOrder" : 1.0,
+    "display" : "Individual details",
+    "formElements" : [ {
+      "name" : "Mobile number",
+      "uuid" : "a7428d3b-18a9-4225-b82c-f4ab58363c6f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Mobile number",
+        "uuid" : "87841d7b-dc25-4d02-9fae-235bd5a68c69"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "validFormat" : {
+        "regex" : "^[0-9]{10}$",
+        "descriptionKey" : "10DigitsRequired"
+      },
+      "mandatory" : true
+    }, {
+      "name" : "Relation to head of the family",
+      "uuid" : "dfa2bdce-34e2-4a32-abe0-0f05ee28e745",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Relation to head of the family",
+        "uuid" : "e24afb6b-cf0c-4dc2-96a4-66cfcc180ba5"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Road number",
+      "uuid" : "4806dfda-fcda-4ed0-a5d0-f94fef3cfdf0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Road number",
+        "uuid" : "a74324a4-bd47-405f-a981-ce598283f494"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
+      "name" : "House number",
+      "uuid" : "59172ee0-6d62-47d8-be1f-072e0e6fe422",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "House number",
+        "uuid" : "0ddfce58-9a4f-4af4-9b9a-16af05684307"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : ""
+}

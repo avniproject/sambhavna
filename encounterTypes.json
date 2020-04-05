@@ -1,0 +1,9 @@
+[ {
+  "name" : "COVID-19",
+  "uuid" : "b84563c0-280c-4c2b-a42d-7d0315c80f2d",
+  "encounterEligibilityCheckRule" : ""
+}, {
+  "name" : "Household details",
+  "uuid" : "7a867ce1-2a86-4e82-b21f-d753404d32fa",
+  "encounterEligibilityCheckRule" : ""
+} ]

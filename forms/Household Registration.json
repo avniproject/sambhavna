@@ -1,0 +1,38 @@
+{
+  "name" : "Household Registration",
+  "uuid" : "2797e3be-d566-43cb-b5fa-7da245776b68",
+  "formType" : "IndividualProfile",
+  "formElementGroups" : [ {
+    "uuid" : "dd432210-e656-443d-85a8-7e5e1f6e45d7",
+    "name" : "Household Details",
+    "displayOrder" : 1.0,
+    "display" : "Household Details",
+    "formElements" : [ {
+      "name" : "Road number",
+      "uuid" : "cab6bf92-fc7b-46d0-90dd-a5ceb30b24e3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Road number",
+        "uuid" : "a74324a4-bd47-405f-a981-ce598283f494"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "House number",
+      "uuid" : "576b916b-417d-4432-8db5-af70963d7d13",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "House number",
+        "uuid" : "0ddfce58-9a4f-4af4-9b9a-16af05684307"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : ""
+}

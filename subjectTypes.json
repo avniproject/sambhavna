@@ -1,0 +1,11 @@
+[ {
+  "name" : "Individual",
+  "uuid" : "a4392884-cfc8-434a-b746-0163bcdeab42",
+  "group" : false,
+  "voided" : false
+}, {
+  "name" : "Household",
+  "uuid" : "33efe199-f1c5-495d-b532-9337b0ef8380",
+  "group" : true,
+  "voided" : false
+} ]

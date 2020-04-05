@@ -1,0 +1,49 @@
+{
+  "name" : "Household details",
+  "uuid" : "a80118f1-d4dd-4d08-bc21-437414a63d8a",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "e53bfa80-290a-4731-86a6-4227e083b2c2",
+    "name" : "Household details",
+    "displayOrder" : 1.0,
+    "display" : "Household details",
+    "formElements" : [ {
+      "name" : "Last encounter date",
+      "uuid" : "656788fd-b606-45ad-8adb-1df985959a7f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Last encounter date",
+        "uuid" : "ef4421b0-2aad-4f33-8b8c-1970437ecc53"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Is anyone in the family scared due to Kovid-19",
+      "uuid" : "a4e4c5eb-f9f7-4606-a200-65a36c6d638a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is anyone in the family scared due to Kovid-19",
+        "uuid" : "2a5ed34b-6482-4705-b8e9-87d04880b94a"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Is food or any other help needed",
+      "uuid" : "b9d59ddc-d1b4-4ec7-a269-957044819bb8",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Is food or any other help needed",
+        "uuid" : "32957e3f-6f74-400d-a290-68bfb0ef9959"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : ""
+}

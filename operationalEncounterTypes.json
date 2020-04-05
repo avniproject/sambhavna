@@ -1,0 +1,15 @@
+{
+  "operationalEncounterTypes" : [ {
+    "uuid" : "4316b579-a9fb-477a-9b36-626322d59518",
+    "encounterType" : {
+      "uuid" : "b84563c0-280c-4c2b-a42d-7d0315c80f2d"
+    },
+    "name" : "COVID-19"
+  }, {
+    "uuid" : "a0759118-3ae7-4c7f-8ae2-d50297b3fd51",
+    "encounterType" : {
+      "uuid" : "7a867ce1-2a86-4e82-b21f-d753404d32fa"
+    },
+    "name" : "Household details"
+  } ]
+}

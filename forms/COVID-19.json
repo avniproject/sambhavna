@@ -1,0 +1,186 @@
+{
+  "name" : "COVID-19",
+  "uuid" : "e022a6c1-5944-41db-8835-d10b3db533e0",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "da51203f-ed36-47dc-a48e-acd92910c0f4",
+    "name" : "Patient screening",
+    "displayOrder" : 1.0,
+    "display" : "Patient screening",
+    "formElements" : [ {
+      "name" : "Dry cough",
+      "uuid" : "2fd2a6b1-0ccc-43b7-af55-1a8faada7e9f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Dry cough",
+        "uuid" : "189f8ddc-30f1-4375-a2a4-4f4819529b01"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Cold",
+      "uuid" : "d4e885f0-ce80-4e1b-bd8d-d8d64cf0a9b5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Cold",
+        "uuid" : "dd9d70fe-8f2f-49c9-a25d-679bd2d95db2"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Diarrhoea",
+      "uuid" : "54251e41-1061-41e6-a1a3-6f72dd4a0086",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Diarrhoea",
+        "uuid" : "d41691f6-0255-4dd3-9648-c520057af23f"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Throat pain",
+      "uuid" : "d17a84b7-5ab3-4468-9038-4298d9e6a448",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Throat pain",
+        "uuid" : "35d7c79c-4816-4713-89e0-1fa6193899d2"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Body pain",
+      "uuid" : "a1488e7b-2bc0-4457-97a0-f8e5981b1c9f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Body pain",
+        "uuid" : "e50ee446-6eba-486a-963d-f3c2c5f1ce6c"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Headache",
+      "uuid" : "26ce3be6-078a-4e88-998a-38b999f3882a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Headache",
+        "uuid" : "105fcdc4-54b9-4ca8-adf5-ca8c4d0904f2"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Fever",
+      "uuid" : "88978685-6774-4c0a-b2f5-820e8b3bcaee",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Fever",
+        "uuid" : "2138221d-592d-41f4-a344-eb2fa35ec015"
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Body temperature",
+      "uuid" : "7f412503-34e3-4c89-b791-01b2a1e4de74",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Body temperature",
+        "uuid" : "2e68d42b-cb1b-4c95-9498-1fe9a744a3ac"
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n    const encounter = params.entity;\n    const formElement = params.formElement;\n    const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({encounter, formElement});\n    statusBuilder.show().when.valueInEncounter('Fever').containsAnswerConceptName(\"Yes\");\n    return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Problem while breathing",
+      "uuid" : "21268e44-8235-4f1e-8ffa-d3e858f42ea6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Problem while breathing",
+        "uuid" : "2ea0663a-c8dd-4d70-8a1c-c4d04a9428bb"
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Fatigue",
+      "uuid" : "fb351182-3335-4e5b-bf51-a846d22d7ab0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Fatigue",
+        "uuid" : "da6f9905-a963-4dcf-859d-e942c9a75b67"
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Any travelling history in last 14 days",
+      "uuid" : "7cc39b00-acbe-497e-813f-7c4efcb59c2e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Any travelling history in last 14 days",
+        "uuid" : "10f19fc0-80de-44f2-ae61-e7f2dae8c509"
+      },
+      "displayOrder" : 11.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Any visit to  Infected locations",
+      "uuid" : "fbea63c9-429a-4b07-a3b2-8eae34bd0519",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Any visit to  Infected locations",
+        "uuid" : "7cd16ec5-abba-487f-ba3c-3bf9a6837a25"
+      },
+      "displayOrder" : 12.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Serve the infected",
+      "uuid" : "13b4bc75-995d-43bb-b5c5-38b1ce36ebb0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Serve the infected",
+        "uuid" : "f1147403-19a3-49cd-81bb-7a32465121d0"
+      },
+      "displayOrder" : 13.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Total score",
+      "uuid" : "cdfed982-ca40-46da-ace7-24fc68c49ed8",
+      "keyValues" : [ {
+        "key" : "editable",
+        "value" : false
+      } ],
+      "concept" : {
+        "name" : "Total score",
+        "uuid" : "fca3ee39-113e-424c-9aef-95c4886adb2c"
+      },
+      "displayOrder" : 14.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n    const encounter = params.entity;\n    const formElement = params.formElement;\n    const getScoreValue = (concept, score) => encounter.getObservationReadableValue(concept) === 'Yes' ? score : 0;\n    const conceptScoreMap = [\n        {concept: 'Dry cough', score: 1},\n        {concept: 'Cold', score: 1},\n        {concept: 'Diarrhoea', score: 1},\n        {concept: 'Throat pain', score: 1},\n        {concept: 'Body pain', score: 1},\n        {concept: 'Headache', score: 1},\n        {concept: 'Fever', score: 1},\n        {concept: 'Problem while breathing', score: 2},\n        {concept: 'Fatigue', score: 2},\n        {concept: 'Any travelling history in last 14 days', score: 3},\n        {concept: 'Any visit to  Infected locations', score: 3},\n        {concept: 'Serve the infected', score: 3},\n    ];\n    const score = conceptScoreMap.map(({concept, score}) => getScoreValue(concept, score)).reduce((a, b) => a + b);\n    return new imports.rulesConfig.FormElementStatus(formElement.uuid, true, score);\n};\n",
+      "mandatory" : false
+    }, {
+      "name" : "Any old disease",
+      "uuid" : "9033c8e4-ba22-47bf-a0d1-bc7276eca9c4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Any old disease",
+        "uuid" : "d57fdf34-ef09-4785-ac95-3ef5b4f7544c"
+      },
+      "displayOrder" : 15.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : ""
+}
